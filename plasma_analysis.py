@@ -16,7 +16,7 @@ def calculate_normalized_intensity_profile(image_path):
     return normalized_intensity_profile
 
 # Пример использования для одного изображения
-image_path = 'path_to_your_image.jpg'
+image_path = 'air_1_torr.JPG'
 normalized_intensity_profile = calculate_normalized_intensity_profile(image_path)
 
 # Построение графика
@@ -25,3 +25,5 @@ plt.xlabel('Z (положение вдоль оси трубки)')
 plt.ylabel('Интенсивность (B / Bmax)')
 plt.title('Нормированный профиль интенсивности вдоль оси Z')
 plt.show()
+plt.savefig('intensity_profile_air_1_torr.png')
+
